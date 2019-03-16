@@ -1,0 +1,20 @@
+[
+  {
+    "ID": 20,
+    "Name" : "Shyam",
+    "Company":"Marolix",
+    "Area" : "Hyderabad"
+  },
+  {
+    "ID": 30,
+    "Name" : "Perm",
+    "Company":"LawForm",
+    "Area" : "Hyderabad"
+  },
+  {
+    "ID": 40,
+    "Name" : "Some",
+    "Company":"Ohter",
+    "Area" : "Hyderabad"
+  }
+]

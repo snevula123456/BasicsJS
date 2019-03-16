@@ -1,0 +1,10 @@
+[
+  {
+    "title": "THis is post one",
+    "body" : "THis is the body of post one"
+  },
+  {
+    "title": "This is second one",
+    "body": "This is body of second one"
+  }
+]

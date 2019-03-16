@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+        li{
+            list-style: none;
+            margin-top: 5px;
+        }
+        form ul li label{
+            float: left;
+            clear: left;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+            font-family:Verdana, Arial, Helvetica, sans-serif;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form action="#" onsubmit="return validation()">
+    <ul>
+        <li><label>User id:</label></li>
+        <li><input type="text" name="userid" id="uid" /></li>
+        <li><label>Password</label></li>
+        <li><input type="password" name="passid" id="pas"></li>
+        <li><label>Username</label></li>
+        <li><input type="text" id="uname" name="username"></li>
+        <li><input type="submit" name="submit" value="InsertNow" /></li>
+    </ul>
+</form>
+<div id="err"></div>
+</body>
+</html>

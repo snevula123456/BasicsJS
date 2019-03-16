@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tether.min.css">
+    <script src="js/jquery3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"> </script>
+    <script src="js/tether.min.js"></script>
+</head>
+<body>
+<h2>hello world</h2>
+<button class="btn btn-primary" onclick="myfunction()">submit</button>
+<!--Events Practise-->
+<!--Two types of buttons
+1.simple events : mousedown/mouseup, mouseover/mouseout, mousemove
+2.complext events:click, context-menu,dblclick.
+-->
+<button id="button">Alt+Shift+Click on me!</button>
+<button id="button2">Clikc me to show your message</button>
+<button onclick="shyam()">Function</button>
+<!--The below one will learn later-->
+<input onmousemove="this.value=clientX +':'+this.value= clientY" value="mouse over me">
+<b ondblclick= "alert('This is dbclick alert')">Double click me to get the alert</b><br/>
+<b ondblclick="alert('test')" onmousedown="return false">Double click me to dont select the area</b>
+
+<script>
+    /*This is Alt+Shit+Click*/
+    var button = document.getElementById("button");
+    button.onclick = function(event) {
+        if (event.altKey && event.shiftKey) {
+            alert('Hooray!');
+        }else{
+            alert("See the button")
+        }
+    };
+
+    var btn2 = document.getElementById("button2");
+    btn2.onclick = function (){
+        alert("Welcome to the btn2")
+    };
+</script>
+</body>
+</html>
